@@ -6,12 +6,13 @@ namespace Lz11
     {
         static void Main(string[] args)
         {
-            try { 
-            
+            try {
+                MyClass myClass = new MyClass(1, 2, 3);
+                Console.WriteLine(myClass.ToString());
+            throw new Exception("randomText");
             }
             catch (Exception e) 
             {
-                Console.WriteLine(e.Message);
             }
         }
     }

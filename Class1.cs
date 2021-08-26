@@ -79,7 +79,7 @@ namespace Lz11
 
     public static class Extension  
     {
-        static string ToString(this MyClass myClass)
+        static string ToString(this IMyInterface myClass)
         {
             return "ToString";
         }
@@ -89,6 +89,7 @@ namespace Lz11
     {
         public Exception(string message)
         {
+            Console.WriteLine(message);
         }
     }
 
